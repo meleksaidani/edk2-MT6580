@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: CI Build
-      run: ci-build.sh
+      run: chmod +x ci-build.sh && ./ci-build.sh
 
     - uses: actions/upload-artifact@v3
       with:
