@@ -20,3 +20,7 @@ jobs:
       with:
         name: uefi.img
         path: ./uefi.img
+    - uses: actions/upload-artifact@v3
+      with:
+        name: uefi.fd
+        path: ./workspace/Build/MSM8916Pkg/DEBUG_GCC5/FV/MSM8916PKG_UEFI.fd
